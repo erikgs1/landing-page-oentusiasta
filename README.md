@@ -1,2 +1,4 @@
 # landing-page-oentusiasta
-Landing para criada para o blog O Entusiasta 
+Landing page para o blog O Entusiasta.
+
+O blog será um template wordpress personalizado, feito com Wordpress totalmente responsivo.
