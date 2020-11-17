@@ -6,6 +6,9 @@
 }
 main{
     .content-box{
+        width: 100%;
+        height: 500px;
+        margin-bottom: 70px;
         .feature-image{
             text-align: center;
             .img-large, .img-medium, .img-small{
@@ -18,6 +21,19 @@ main{
                 width: 200px;
             }
         }
+    }
+    .box-small{
+        .content-info{
+            padding: 0 30px;
+        }
+    }
+    .box-medium{
+        .content-info{
+            padding: 0 45px;
+        }
+    }
+    .box-large{
+
     }
     .content--box--one{
     }
