@@ -1,12 +1,27 @@
-.post-thumb{
-    .thumb{
-        max-width: 100%;
-        min-height: 100px;
-        img{
-            width: 100%;
-            height: 600px;
-            object-fit: cover;
-            object-position: center;
+main{
+    .post-thumb{
+        .thumb{
+            max-width: 100%;
+            min-height: 100px;
+            margin-bottom: 30px;
+            img{
+                width: 100%;
+                height: 600px;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+    .content-info{
+        .post--title{
+            font-size: 55px;
+            font-weight: 400;
+        }
+        .sub--title{
+            font-size: 32px;
+            line-height: 1.2;
+            font-weight: 300;
+            color: #58595b;
         }
     }
 }
