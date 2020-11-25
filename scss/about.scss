@@ -1,0 +1,45 @@
+@import "colors";
+
+body{
+    background-color: $black;
+    color: $white;
+}
+header {
+    .buttons-menu {
+        .close-open {
+            .line{
+                background-color: $white;
+            }
+        }       
+    }
+}
+main{
+    .title{
+        h2{
+            font-size: 40px;
+        }
+    }
+    .discription{
+        p{
+            font-size: 20px;
+        }
+    }
+    .image{
+            text-align: center;
+        img{
+            width: 900px;
+        }
+    }
+}
+footer {
+    .footer-menu { 
+        li {
+            a{
+                color: $white !important;
+                img{
+                    filter: invert(1);
+                }
+            }
+        }
+    }
+}
