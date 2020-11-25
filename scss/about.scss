@@ -14,20 +14,25 @@ header {
     }
 }
 main{
-    .title{
-        h2{
-            font-size: 40px;
+    .container-about{
+        max-width: 1250px;
+        padding: 0 15px 0 85px;
+        margin: 0 auto;
+        .title{
+            h2{
+                font-size: 40px;
+            }
         }
-    }
-    .discription{
-        p{
-            font-size: 20px;
+        .discription{
+            p{
+                font-size: 18px;
+            }
         }
-    }
-    .image{
-            text-align: center;
-        img{
-            width: 900px;
+        .image{
+                text-align: center;
+            img{
+                width: 100%;
+            }
         }
     }
 }
