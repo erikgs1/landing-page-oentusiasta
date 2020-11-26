@@ -1,0 +1,29 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+@include media-breakpoint-down(xs) { 
+    header{
+        min-height: 70px;
+        .buttons-menu{
+            .line--one{
+                top: 30px;
+            }
+            .line--two{
+                top: 37px;
+            }
+        }
+        .logo{
+            height: 70px;
+            h2{
+                font-size: 40px;
+                line-height: 70px;
+            }
+        }
+    }
+    main{
+        .content-box{
+            border: none;
+            .content-info{
+                padding: 20px 0;
+            }
+        }
+    }
+ }
