@@ -6,11 +6,18 @@
 *{
     box-sizing: border-box;
 }
-.border--left{
-    border-left: solid 1px $borderColor;
+.border--top{
+    border-top: solid 1px $borderColor;
 }
 .border--right{
     border-right: solid 1px $borderColor;
+}
+
+.border--bottom{
+    border-bottom: solid 1px $borderColor;
+}
+.border--left{
+    border-left: solid 1px $borderColor;
 }
 body{
     font-family: 'IBM Plex Serif', serif;
@@ -169,6 +176,9 @@ footer{
     }
     .footer-menu{
         padding-top: 30px;
+        .border--bottom{
+            border: none;
+        }
         .title-menu{
             font-size: 14px;
             color: $textColor;
