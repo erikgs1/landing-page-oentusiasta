@@ -14,7 +14,7 @@
         .logo{
             height: 70px;
             h2{
-                font-size: 40px;
+                font-size: 30px;
                 line-height: 70px;
             }
         }
@@ -23,6 +23,11 @@
         .post-thumb{
             margin-left: -15px;
             width: calc(100% + 30px);
+            .thumb{
+                img{
+                    height: auto;
+                }
+            }
         }
         .content-box{
             min-height: auto;
@@ -47,6 +52,27 @@
                     font-size: 28px;
                     font-weight: normal;
                 }
+            }
+        }
+        .content-info{
+            .post--title{
+                font-size: 28px;
+            }
+            .sub--title{
+                font-size: 20px;
+            }
+        }
+        .date{
+            .post-date{
+                padding: 20px 0;
+            }
+        }
+        .post-content{
+            p{
+                font-size: 16px;
+            }
+            .featured--text{
+                font-size: 24px;
             }
         }
     }
