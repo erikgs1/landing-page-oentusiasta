@@ -20,6 +20,10 @@
         }
     }
     main{
+        .post-thumb{
+            margin-left: -15px;
+            width: calc(100% + 30px);
+        }
         .content-box{
             min-height: auto;
             margin-bottom: 30px;
