@@ -68,11 +68,42 @@
             }
         }
         .post-content{
+            img{
+                width: calc(100% + 30px);
+                margin-left: -15px;
+            }
             p{
                 font-size: 16px;
             }
             .featured--text{
                 font-size: 24px;
+            }
+        }
+    }
+    .about-page{
+        main{
+            .container-about{
+                padding: 0 15px;
+                .title{
+                    margin-top: 40px;
+                    h2{
+                        font-size: 28px;
+                    }
+                }
+                .title--manifest{
+                    margin-bottom: 40px;
+                    margin-top: 30px;
+                    padding-left: 15px;
+                }
+                h3{
+                    font-size: 22px;
+                    border: none;
+                    padding: 0;
+                }
+                p{
+                    margin-right: 0;
+                    padding-right: 0;
+                }
             }
         }
     }

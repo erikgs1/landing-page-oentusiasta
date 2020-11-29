@@ -68,7 +68,9 @@ main{
     }
     
     .post-content{
-        clear: both;
+        img{
+            width: 100%;
+        }
         p{
             font-size: 20px;
         }
@@ -93,10 +95,10 @@ main{
     .most-read{
         h2, h3{
             font-size: 28px;
+            font-weight: normal;
         }
         h3{
             font-style: italic;
-            font-weight: normal;
         }
     }
 }
