@@ -1,6 +1,7 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "colors";
-@include media-breakpoint-down(xs) { 
+
+@include media-breakpoint-down(md) { 
     header{
         min-height: 70px;
         .buttons-menu{
@@ -9,6 +10,16 @@
             }
             .line--two{
                 top: 37px;
+            }
+        }
+        .main-menu{
+            width: 80vw;
+            height: 100vh;
+            ul{
+                padding-left: 20px;
+            }
+            .title-menu{
+                padding-left: 20px;
             }
         }
         .logo{
@@ -104,6 +115,12 @@
                     margin-right: 0;
                     padding-right: 0;
                 }
+                .image {
+                    img{
+                        width: calc(100% + 30px);
+                        margin-left: -15px;
+                    }
+                }
             }
         }
     }
@@ -150,6 +167,20 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+@include media-breakpoint-down(sm) { 
+    header{
+        .main-menu{
+            width: 100vw;
+            height: 100vh;
+            ul{
+                padding-left: 20px;
+            }
+            .title-menu{
+                padding-left: 20px;
             }
         }
     }
