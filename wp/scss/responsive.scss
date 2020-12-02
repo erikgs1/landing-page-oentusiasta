@@ -1,0 +1,187 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "colors";
+
+@include media-breakpoint-down(md) { 
+    header{
+        min-height: 70px;
+        .buttons-menu{
+            .line--one{
+                top: 30px;
+            }
+            .line--two{
+                top: 37px;
+            }
+        }
+        .main-menu{
+            width: 80vw;
+            height: 100vh;
+            ul{
+                padding-left: 20px;
+            }
+            .title-menu{
+                padding-left: 20px;
+            }
+        }
+        .logo{
+            height: 70px;
+            h2{
+                font-size: 30px;
+                line-height: 70px;
+            }
+        }
+    }
+    main{
+        .post-thumb{
+            margin-left: -15px;
+            width: calc(100% + 30px);
+            .thumb{
+                img{
+                    height: auto;
+                }
+            }
+        }
+        .content-box{
+            min-height: auto;
+            margin-bottom: 30px;
+            border: none;
+            .feature-image{
+                img{
+                    width: 100% !important;
+                }
+            }
+            .content-info{
+                padding: 20px 0;
+                .title--small{
+                    font-size: 28px;
+                    font-weight: normal;
+                }
+                .title--medium{
+                    font-size: 28px;
+                    font-weight: normal;
+                }
+                .title--large{
+                    font-size: 28px;
+                    font-weight: normal;
+                }
+            }
+        }
+        .content-info{
+            .post--title{
+                font-size: 28px;
+            }
+            .sub--title{
+                font-size: 20px;
+            }
+        }
+        .date{
+            .post-date{
+                padding: 20px 0;
+            }
+        }
+        .post-content{
+            img{
+                width: calc(100% + 30px);
+                margin-left: -15px;
+            }
+            p{
+                font-size: 16px;
+            }
+            .featured--text{
+                font-size: 24px;
+            }
+        }
+    }
+    .about-page{
+        main{
+            .container-about{
+                padding: 0 15px;
+                .title{
+                    margin-top: 40px;
+                    h2{
+                        font-size: 28px;
+                    }
+                }
+                .title--manifest{
+                    margin-bottom: 40px;
+                    margin-top: 30px;
+                    padding-left: 15px;
+                }
+                h3{
+                    font-size: 22px;
+                    border: none;
+                    padding: 0;
+                }
+                p{
+                    margin-right: 0;
+                    padding-right: 0;
+                }
+                .image {
+                    img{
+                        width: calc(100% + 30px);
+                        margin-left: -15px;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        .logo{
+            height: 70px;
+            h2{
+                font-size: 40px;
+                line-height: 70px;
+            }
+            h3{
+                font-size:16px ;
+            }
+        }
+        .footer-menu {
+            .border--bottom{
+                border-bottom: solid 1px $borderColor;
+            }
+            .about, .subjects{
+                padding-left :40px;
+            }
+            .title-menu{
+                padding-left :40px;
+            }
+            .title--socials{
+                width: 100%;
+                text-align: center;
+                padding: 20px 0 0;
+            }
+            .socials{
+                padding: 0;
+                ul{
+                    width: 100%;
+                    padding: 0;
+                    display: flex;
+                    justify-content: center;
+                    li{
+                        padding: 0;
+                        display: inline;
+                        &:first-child{
+                            a{
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-down(sm) { 
+    header{
+        .main-menu{
+            width: 100vw;
+            height: 100vh;
+            ul{
+                padding-left: 20px;
+            }
+            .title-menu{
+                padding-left: 20px;
+            }
+        }
+    }
+}
