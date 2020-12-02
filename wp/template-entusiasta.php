@@ -11,7 +11,7 @@ Template Name: Entusiasta
            <div class="row no-gutters">
                 <div class="col-12 col-lg-8 order-lg-2">
                     <div class="image">
-                        <img src="images/exemple2.jpg" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/exemple2.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-12 col-lg-4 order-lg-1">

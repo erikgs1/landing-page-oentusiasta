@@ -49,7 +49,7 @@ Template Name: Manifesto
                 <div class="col-12 col-lg-7 order-1 order-lg-4">
                     <div class="col-12">
                         <div class="image">
-                            <img class="image-manifest" src="images/exemple2.jpg" alt="">
+                            <img class="image-manifest" src="<?php echo get_template_directory_uri(); ?>/images/exemple2.jpg" alt="">
                         </div>
                     </div>
                 </div>
