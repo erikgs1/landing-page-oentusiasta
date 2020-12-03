@@ -20,7 +20,7 @@
     border-left: solid 1px $borderColor;
 }
 body{
-    font-family: 'IBM Plex Serif', serif;
+    font-family: 'IBM Plex Serif', serif !important;
 }
 header{
     max-width: 1360px;
@@ -129,11 +129,13 @@ main{
     }
     .content-info{
         .tag{
-            color: $textColor;
-            font-size: 14px;
-            font-style: italic;
-            line-height: 1;
-            font-family: 'IBM Plex Mono';
+            a{
+                color: $textColor;
+                font-size: 14px;
+                font-style: italic;
+                line-height: 1;
+                font-family: 'IBM Plex Mono';
+            }
         }   
         .title--small{
             font-size: 28px;
