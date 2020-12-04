@@ -1,11 +1,12 @@
 @import "colors";
 
 .Featured, .featured{
-    min-height: 600px;
+    min-height: 630px;
     position: relative;
     .post-thumb{
         width: 100%;
         position: absolute;
+        display: block;
         z-index: -1;
         .thumb{
             max-width: 100%;
@@ -22,13 +23,13 @@
     .logo{
         h2{
             color: $white;
-            text-shadow: 0 0 10px $black;
+            text-shadow: 0 0 50px rgba($color: $black, $alpha: 0.5);
         }
     }
     .buttons-menu {
         .line {
             background-color: $white;
-            box-shadow: 0 0 10px $black;
+            box-shadow: 0 0 50px rgba($color: $black, $alpha: 0.5);
         }
     }
 }

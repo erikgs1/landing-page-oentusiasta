@@ -1,4 +1,4 @@
-<article <?php post_class(array('class' => 'featured' )); ?>>   
+<article <?php post_class(); ?>>   
     <div class="feature-image " >
         <a href="<?php the_permalink() ?>"><img class="img-medium" src="<?php echo get_the_post_thumbnail_url();?>" alt=""></a>
     </div>
