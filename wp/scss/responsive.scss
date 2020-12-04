@@ -52,22 +52,30 @@
             .content-info{
                 padding: 20px 0;
                 .title--small{
-                    font-size: 28px;
-                    font-weight: normal;
+                    a{
+                        font-size: 28px;
+                        font-weight: normal;
+                    }
                 }
                 .title--medium{
-                    font-size: 28px;
-                    font-weight: normal;
+                    a{
+                        font-size: 28px;
+                        font-weight: normal;
+                    }
                 }
                 .title--large{
-                    font-size: 28px;
-                    font-weight: normal;
+                    a{
+                        font-size: 28px;
+                        font-weight: normal;
+                    }
                 }
             }
         }
         .content-info{
             .post--title{
-                font-size: 28px;
+                a{
+                    font-size: 28px;
+                }
             }
             .sub--title{
                 font-size: 20px;

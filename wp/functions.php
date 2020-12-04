@@ -20,3 +20,18 @@ function oentusiasta_config(){
     add_theme_support('post-thumbnails');
 }
 add_action('after_setup_theme', 'oentusiasta_config', 0);
+
+function manifest_widgets_init() {
+
+	register_sidebar(
+		array(
+			'name'          => __( 'Manifest Sub' ),
+			'id'            => 'manifest-sub',
+			'description'   => __( 'Add featured text'),
+			'before_widget' => '<h3>',
+			'after_widget'  => '</h3>',
+		)
+	);
+
+}
+add_action( 'widgets_init', 'manifest_widgets_init' );

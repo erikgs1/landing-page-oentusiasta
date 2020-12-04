@@ -137,16 +137,33 @@ main{
                 font-family: 'IBM Plex Mono';
             }
         }   
+        .title--small, .title--medium, .title--large{
+            a{
+                color: $black;
+                &:hover{
+                    color: $black;
+                    text-decoration: none;
+                }
+            }
+        }
+
+
         .title--small{
-            font-size: 28px;
+            a{
+                font-size: 28px;
+            }
         }
         .title--medium{
-            font-size: 40px;
-            line-height: 1.11;
+            a{
+                font-size: 40px;
+                line-height: 1.11;
+            }
         }
         .title--large{
-            font-size: 40px;
-            line-height: 1.11;
+            a{
+                font-size: 40px;
+                line-height: 1.11;
+            }
         }
         .description{
             font-size: 18px;

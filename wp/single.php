@@ -5,7 +5,7 @@
                 <div class="row no-gutters">
                     <div class="col-12 col-lg-10">
                         <div class="thumb">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/exemple-1.jpg" alt=""> 
+                            <img src="<?php echo get_the_post_thumbnail_url();?>" alt=""> 
                         </div>
                     </div>
                     <div class="col-lg-2"></div>
@@ -15,9 +15,9 @@
                 <div class="col-1 "></div>
                 <div class="col-12 col-lg-8 pr-lg-5">
                     <div class="content-info">
-                        <p class="tag">Música</p>
+                        <p class="tag"><?php the_tags('', ', ' ); ?></p>
                         <h2 class="post--title">
-                            Na estrada que passei
+                            <?php the_title(); ?>
                         </h2>
                         <p class="sub--title">Pretas de rostos, narizes, cabelos, pesos, alturas, vozes, tons, de pele e dramaticidades diferentes para lembrar que Elza Gomes da Conçeição conteve uma mescla de mútiplas</p>        
                     </div>

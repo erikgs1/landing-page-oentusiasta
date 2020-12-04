@@ -1,11 +1,11 @@
 <article <?php post_class(array('class' => 'featured' )); ?>>   
     <div class="feature-image " >
-        <img class="img-large" src="<?php echo get_the_post_thumbnail_url();?>" alt="">
+        <a href="<?php the_permalink() ?>"><img class="img-large" src="<?php echo get_the_post_thumbnail_url();?>" alt=""></a>
     </div>
     <div class="content-info">
     <p class="tag"><?php the_tags('', ', ' ); ?></p>
     <h2 class="title--large">
-        <?php the_title(); ?>
+    <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
     </h2>
     <p class="description"><?php  the_excerpt()  ?></p>        
     </div>
