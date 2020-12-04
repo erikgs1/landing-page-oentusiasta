@@ -6,8 +6,21 @@
     <title>O Entusiasta</title>
     <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
-    <header>
+<body <?php body_class(); ?>> 
+    <?php 
+        $categories = get_the_category(); 
+    ?>
+    <header  class="<?php  echo $categories[0]->cat_name; ?>">
+        <div class="post-thumb">
+                <div class="row no-gutters">
+                    <div class="col-12">
+                        <div class="thumb">
+                            <img src="<?php echo get_the_post_thumbnail_url();?>" alt=""> 
+                        </div>
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+        </div>
         <div class="buttons-menu">
             <div class="close-open">
                 <span class="line line--one"></span>
