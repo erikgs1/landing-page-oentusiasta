@@ -24,37 +24,14 @@
                         <h2 class="post--title">
                             <?php the_title(); ?>
                         </h2>
-                        <p class="sub--title">
+                        <h3 class="sub--title">
                             <?php dynamic_sidebar( 'post-sub');?>
-                        </p>        
+                        </h3>
                     </div>
-                    <div class="socials">
-                        <ul>
-                            <li>
-                                <a href="#" class="m-0">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/twitter.png" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/facebook.png" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/instagram.png" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/youtube.png" alt="">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                    <?php dynamic_sidebar( 'socials');?>
                     <div class="date">
                         <div class="post-date">
-                            <p> 20 Junho de 2020</p>
+                            <p><?php echo get_the_date(); ?></p>
                         </div>
                     </div>
                     <div class="post-content">

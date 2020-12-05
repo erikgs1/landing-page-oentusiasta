@@ -25,9 +25,9 @@ function manifest_widgets_init() {
 
 	register_sidebar(
 		array(
-			'name'          => __( 'Manifest Sub' ),
+			'name'          => __( 'Manifesto Subtítulo' ),
 			'id'            => 'manifest-sub',
-			'description'   => __( 'Add featured text'),
+			'description'   => __( 'Adicionar subtítulo na página Manifesto'),
 			'before_widget' => '<h3>',
 			'after_widget'  => '</h3>',
 		)
@@ -35,11 +35,21 @@ function manifest_widgets_init() {
     
     register_sidebar(
 		array(
-			'name'          => __( 'Post Sub Title' ),
+			'name'          => __( 'Post Subtítulo' ),
 			'id'            => 'post-sub',
-			'description'   => __( 'Add subtitle'),
+			'description'   => __( 'Adiciona um subtítulo ao post'),
 			'before_widget' => '<p>',
 			'after_widget'  => '</p>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name'          => __( 'Redes sociais' ),
+			'id'            => 'socials',
+			'description'   => __( 'Código das redes sociais'),
+			'before_widget' => '<div>',
+			'after_widget'  => '</div>',
 		)
 	);
 

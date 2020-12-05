@@ -53,30 +53,7 @@
                             </div>
                             <div class="col-12 col-lg-4">
                                 <span class="title-menu title--socials">Siga</span>
-                                <div class="socials ">
-                                    <ul> 
-                                        <li>
-                                            <a href="#">
-                                                <img  src="<?php echo get_template_directory_uri(); ?>/images/twitter.png" alt="">
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <img  src="<?php echo get_template_directory_uri(); ?>/images/facebook.png" alt="">
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <img  src="<?php echo get_template_directory_uri(); ?>/images/instagram.png" alt="">
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <img  src="<?php echo get_template_directory_uri(); ?>/images/youtube.png" alt="">
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <?php dynamic_sidebar( 'socials');?>
                             </div>
                         </div>
                     </div>

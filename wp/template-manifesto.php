@@ -26,7 +26,6 @@ Template Name: Manifesto
                     <div class="col-lg-12">
                         <div class="description">
                             <?php the_content(); ?>
-                            
                         </div>
                     </div>
                 </div>
