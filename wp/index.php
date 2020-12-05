@@ -30,34 +30,57 @@
                 <!-- End medium Image-->
 
                 <!-- Smalls Images -->
-                <div class="col-12 col-lg-6">
-                    <div class="row no-gutters">
-                            <?php 
-                                
-                                $small = new WP_Query(array(
-                                    'post_type' => 'post',
-                                    'posts_per_page' => 2,
-                                    'offset' => 1,
-                                ));
-                                if( $small->have_posts()):
-                                    while($small->have_posts()): $small->the_post();
-                            ?>
-                            
-                            <div class="col-12 col-lg-6">
+                <?php 
+                        
+                        $small = new WP_Query(array(
+                            'post_type' => 'post',
+                            'posts_per_page' => 1,
+                            'offset' => 1,
+                        ));
+                        if( $small->have_posts()):
+                            while($small->have_posts()): $small->the_post();
+                    ?>
+                    
+                    <div class="col-12 col-lg-3">
 
-                                <div class="content-box box-small">
-                                    <?php get_template_part('template-parts/content', 'small') ?>
-                                </div>
-                            
-                            </div>
-                            <?php
-                                    endwhile;
-                                    wp_reset_postdata();
-                                endif;
-                            ?>
+                        <div class="content-box box-small">
+                            <?php get_template_part('template-parts/content', 'small') ?>
+                        </div>
+                    
                     </div>
-                </div>
+                    <?php
+                            endwhile;
+                            wp_reset_postdata();
+                        endif;
+                    ?>
                 <!-- End Small Images -->
+
+                <!-- Smalls Images -->
+                    <?php 
+                        
+                        $small = new WP_Query(array(
+                            'post_type' => 'post',
+                            'posts_per_page' => 1,
+                            'offset' => 2,
+                        ));
+                        if( $small->have_posts()):
+                            while($small->have_posts()): $small->the_post();
+                    ?>
+                    
+                    <div class="col-12 col-lg-3">
+
+                        <div class="content-box box-small  border--left">
+                            <?php get_template_part('template-parts/content', 'small') ?>
+                        </div>
+                    
+                    </div>
+                    <?php
+                            endwhile;
+                            wp_reset_postdata();
+                        endif;
+                    ?>
+                <!-- End Small Images -->
+
             </div>
 
             <div class="row no-gutters">
@@ -152,7 +175,7 @@
                             while($medium->have_posts()): $medium->the_post();
                     ?>
                     
-                    <div class="content-box box-medium border--left border--right">
+                    <div class="content-box box-medium border--right">
                         <?php get_template_part('template-parts/content', 'medium') ?>
                     </div>
                     <?php
@@ -179,7 +202,7 @@
                         
                         <div class="col-12 col-lg-3">
 
-                            <div class="content-box box-small  border--left border--right">
+                            <div class="content-box box-small  border--left">
                                 <?php get_template_part('template-parts/content', 'small') ?>
                             </div>
                         
@@ -221,7 +244,7 @@
                     $small = new WP_Query(array(
                         'post_type' => 'post',
                         'posts_per_page' => 1,
-                        'offset' => 8,
+                        'offset' => 9,
                     ));
                     if( $small->have_posts()):
                         while($small->have_posts()): $small->the_post();
@@ -229,7 +252,7 @@
                 
                 <div class="col-12 col-lg-3">
 
-                    <div class="content-box box-small  border--left border--right">
+                    <div class="content-box box-small border--right">
                         <?php get_template_part('template-parts/content', 'small') ?>
                     </div>
                 
@@ -250,7 +273,7 @@
                         $large = new WP_Query(array(
                             'post_type' => 'post',
                             'posts_per_page' => 1,
-                            'offset' => 9,
+                            'offset' => 10,
                         ));
                         if( $large->have_posts()):
                             while($large->have_posts()): $large->the_post();
@@ -258,7 +281,7 @@
                     
                     <div class="col-12 col-lg-8">
 
-                        <div class="content-box box-large border--right">   
+                        <div class="content-box box-large">   
                             <?php get_template_part('template-parts/content', 'large') ?>
                         </div>
                     
@@ -276,7 +299,7 @@
                             $small = new WP_Query(array(
                                 'post_type' => 'post',
                                 'posts_per_page' => 1,
-                                'offset' => 10,
+                                'offset' => 11,
                             ));
                             if( $small->have_posts()):
                                 while($small->have_posts()): $small->the_post();
@@ -313,7 +336,7 @@
                     $small = new WP_Query(array(
                         'post_type' => 'post',
                         'posts_per_page' => 1,
-                        'offset' => 11,
+                        'offset' => 12,
                     ));
                     if( $small->have_posts()):
                         while($small->have_posts()): $small->the_post();
@@ -321,7 +344,7 @@
                 
                 <div class="col-12 col-lg-3">
 
-                    <div class="content-box box-small  border--left border--right">
+                    <div class="content-box box-small  border--left">
                         <?php get_template_part('template-parts/content', 'small') ?>
                     </div>
                 
@@ -340,7 +363,7 @@
                         $medium = new WP_Query( array(
                             'post_type' => 'post',
                             'posts_per_page' => 1,
-                            'offset' => 12,
+                            'offset' => 13,
                         ));
                         if( $medium->have_posts()):
                             while($medium->have_posts()): $medium->the_post();
@@ -376,8 +399,8 @@
                                 <div class="content-box box-medium border--left border--right">
                                     <?php get_template_part('template-parts/content', 'medium') ?>
                                 </div>
-                            
                             </div>
+                            
                             <?php
                                     endwhile;
                                     wp_reset_postdata();

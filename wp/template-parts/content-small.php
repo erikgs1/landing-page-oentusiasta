@@ -7,6 +7,6 @@
     <h2 class="title--small">
     <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
     </h2>
-    <p class="description"><?php  the_excerpt()  ?></p>        
+    <span class="description"><?php  the_excerpt()  ?></span>      
     </div>
 </article>

@@ -102,18 +102,22 @@ main{
     }
     .box-medium{
         .content-info{
-            padding: 20px 75px;
+            padding: 20px 40px;
         }
     }
     .box-large{
         .content-info{
-            padding: 20px 70px;
+            padding: 20px 35px;
         }
     }    
     .content-box{
         width: 100%;
-        min-height: 550px;
+        min-height: 650px;
         margin-bottom: 70px;
+        &:hover{
+            opacity: 0.8;
+            max-width: 105%;
+        }
         .feature-image{
             text-align: center;
             .img-large, .img-medium, .img-small{
@@ -123,10 +127,10 @@ main{
                 width: 200px;
             }
             .img-medium{
-                width: 400px;
+                width: 470px;
             }
             .img-large{
-                width: 600px;
+                width: 670px;
             }
         }
     }
@@ -250,5 +254,4 @@ footer{
         }
     }
 }
-
 @import "responsive";
