@@ -31,6 +31,16 @@ function manifest_widgets_init() {
 			'before_widget' => '<h3>',
 			'after_widget'  => '</h3>',
 		)
+    );
+    
+    register_sidebar(
+		array(
+			'name'          => __( 'Post Sub Title' ),
+			'id'            => 'post-sub',
+			'description'   => __( 'Add subtitle'),
+			'before_widget' => '<p>',
+			'after_widget'  => '</p>',
+		)
 	);
 
 }

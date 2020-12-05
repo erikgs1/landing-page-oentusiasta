@@ -24,7 +24,9 @@
                         <h2 class="post--title">
                             <?php the_title(); ?>
                         </h2>
-                        <p class="sub--title">Pretas de rostos, narizes, cabelos, pesos, alturas, vozes, tons, de pele e dramaticidades diferentes para lembrar que Elza Gomes da Conçeição conteve uma mescla de mútiplas</p>        
+                        <p class="sub--title">
+                            <?php dynamic_sidebar( 'post-sub');?>
+                        </p>        
                     </div>
                     <div class="socials">
                         <ul>
@@ -56,36 +58,7 @@
                         </div>
                     </div>
                     <div class="post-content">
-                        <p>
-                            De repente, temos sete atrizes sobre o palco: Larissa Luz — espantosamente semelhante a Elza mais nova, Janamô, Júlia Tizumba, Késia Estácio,
-                            Khrystal, Laís Lacôrte e Verônica Bonfim —, nos fazendo lembrar que a força e o brilho da mulher que nunca coube em si não poderia ser mesmo representada por apenas uma. Uma longa trajetória de vida, com seus percalços e auges no particular e no público, exigiria, de fato, que só um elenco maior fosse capaz de dar conta desses anos tantos.<br><br>
-
-                            Mas não somente isso. Pretas de rostos, narizes, cabelos, pesos, alturas, vozes, tons de pele e dramaticidades diferentes para lembrar que
-                            Elza Gomes da Conçeição conteve uma mescla de múltiplas mulheres negras em seu interior e que, concomitantemente, tal multiplicidade de mulheres negras igualmente guardam dentro uma Elza Gomes da Conçeição. Marias, Ilziras, Margaridas, Ednas, Sandras, Silvias, Nycolles. Embora reforcemos cada preta como única, peculiar, ímpar, e o são, a proposta da apresentação tratou de ressaltar que Elza era todas e todas eram Elza, vulcânicas, mesmo no limiar entre a agudez do sofrimento e o apogeu da alegria.<br><br>
-                            
-                            Salta aos olhos os pés que tentam se equilibrar por cima de baldes que ainda que componham o cenário minimalista, não simbolizam nada de 
-                            cenográfico ou fictício, antes materializam a dureza das milhões que tiveram seus destinos condenados ao serviço pesado doméstico e/ou industrial de raiz colonial escravocrata através das gerações.<br><br>
-                            
-                            Aponta a historiadora e documentarista Beatriz do Nascimento, em texto adicionado na segunda parte de sua biografia ‘’Eu Sou Atlântica’’, 
-                            acerca das questões da mulher negra no mercado de trabalho, que:
-                        </p>
-                        <h3 class="border-left featured--text">
-                            Configura-se, assim, os primeiros lugares ocupados por pretas no precarizado mercado de trabalho brasileiro. 
-                            Talvez a parte mais barata da carne mais barata?
-                        </h3>
-                        <p>
-                            “a partir de 1930, com a decadência das áreas rurais e a consequente ascensão das áreas urbanas, o processo de vida levado a efeito nessas últimas obriga a que o poder econômico do homem, enquanto chefe de família, decaia um pouco. Para manter o nível estável da renda familiar e empreender a sobrevivência, filhos e mulheres são obrigados a ingressar no mercado de trabalho. Por outro lado, um dado exógeno concorre para que esses grupos alijados anteriormente da hierarquia ocupacional se engajem no processo: a necessidade de mão-de-obra para a indústria e outros serviços recentes concorrem para esse fenômeno. As populações de nível de renda mais baixo são as principais recrutadas. Deste modo, a mulher branca passa a fazer parte da força de trabalho. Mas não podia de deixar de ser, devido ao fato de pertencer ao grupo subordinado, ocupa lugares distintos como de “atividades femininas”. Na fase inicial de industrialização, a mulher branca participa da força de trabalho com o declínio das indústrias tradicionais, principalmente a têxtil, ela se vê expulsa do setor industrial e passa a concentrar-se em empregos burocráticos de nível baixo que, embora mal remunerados exigem certa qualificação educacional. Como consequência desse deslocamento, os homens de classe média ascendem a ocupações burocráticas de nível mais alto. O mesmo não ocorre com a mulher negra, e isto por dois motivos fundamentais: o primeiro, porque a mulher negra ainda não teve acesso suficiente a educação para qualificar-se para estes tipos de empregos burocráticos. Segundo, porque esses empregos implicam relações públicas ou relação com o público. Por exemplo: comércio de mercadorias. Neste contexto, o critério racial se faz muito mais seletivo, mantendo a mulher negra nos empregos tradicionais, ou então como operárias industriais’’.
-                        </p>
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/exemple-1.jpg" alt="">
-                        <span class="author"> Nome sobrenome Foto</span>
-                        <p>
-                            Configura-se, assim, os primeiros lugares ocupados por pretas no precarizado mercado de trabalho brasileiro. Talvez a parte mais barata da carne mais barata? É de Sueli Carneiro a indigesta frase: “ela (a mulher negra) é a última na fila depois de ninguém”. Realidade histórica crua do grupo social da qual Elza fora oriunda e que, tendo se tornado conhecida por todos como Elza Soares, jamais deixou de representar de alguma forma — inclusive nesse tocante dos sofrimentos coletivos.
-
-Para além das performances competentíssimas do elenco dirigido por Duda Maia, do afinado conjunto que o acompanhou também inteiramente feminino formado por Lis De Carvalho, Neila Khadi, Marfa Kourakina, Grazi Pizani, Guta Menezes, Georgia Camara e Renata Montanari, das canções escolhidas para o repertório, como “Se Acaso Você Chegasse”, “O Meu Guri”e “Maria da Vila Matilde”, do entrosamento mágico alcançado entre elas, dirigidas musicalmente com maestria por Pedro Luís, Larissa Luz e Antônia Adnet, do figurino deslumbrante assinado por Kika Lopes e Rocio Moure e da iluminação impecável de Renato Machado, eis um dos grandes aspectos a se elogiar no espetáculo: narrar a jornada da artista carioca partindo do contexto da mulher negra no Brasil, seja no brilhantismo próprio para superar as adversidades gerais ou seja na vulnerabilidade de seu corpo amplamente violentado, com a perfeita visceralidade que a história pede. Nítida competência do texto do dramaturgo Vinícius Calderoni em colocar o individual na perspectiva coletiva merecidamente premiada com um troféu APCA em 2018.
-
-‘’Elza, O Musical’’ estreou no Rio, passou por São Paulo e Minas Gerais, e chega agora no nordeste. Total sucesso de público, tendo sido assistido por mais de 55.000 pessoas, e de crítica, indicado em diversas categorias nos prêmios Shell, APCA, etc. Quando chegar em sua cidade, pela primeira vez ou novamente, não faltarão razões para ir assistir.
-                        </p>
-                        
+                        <?php the_content(); ?>
                     </div>
                 </div>
                 <div class="col-3"></div>

@@ -45,7 +45,7 @@
                             
                             <div class="col-12 col-lg-6">
 
-                                <div class="content-box box-small border--left">
+                                <div class="content-box box-small">
                                     <?php get_template_part('template-parts/content', 'small') ?>
                                 </div>
                             
@@ -357,48 +357,38 @@
                 </div>
                 <!-- End medium Image-->
             </div>
-
-            <?php 
-            
-            if( wp_count_posts()->publish > 100 ) :
-                echo '
-                    <!-- Basic Post - Show More -->
-
+                <?php 
+                    if( wp_count_posts()->publish >= 14 ) : ?>
                     <div class="row no-gutters">
                         <!-- Medium Image-->
-                        <div class="col-12 col-lg-6">
                             <?php 
-                            
+                                
                                 $medium = new WP_Query( array(
-                                    "post_type" => "post",
-                                    "posts_per_page" => 4,
-                                    "offset" => 13,
+                                    'post_type' => 'post',
+                                    'posts_per_page' => 4,
+                                    'offset' => 14,
                                 ));
                                 if( $medium->have_posts()):
                                     while($medium->have_posts()): $medium->the_post();
                             ?>
+                            <div class="col-12 col-lg-6">
+                                
+                                <div class="content-box box-medium border--left border--right">
+                                    <?php get_template_part('template-parts/content', 'medium') ?>
+                                </div>
                             
-                            <div class="content-box box-medium border--left border--right">
-                                <?php get_template_part("template-parts/content", "medium") ?>
                             </div>
                             <?php
                                     endwhile;
                                     wp_reset_postdata();
                                 endif;
                             ?>
-                        </div>
                         <!-- End medium Image-->
                     </div>
-
-                    <!-- End Basic Post - Show More -->
-                
-                ';
-            else:
-                echo 'Mostrar menos posts';
-            endif;
-            ?>
-
-            
+                    <?php 
+                    else:
+                    endif;
+                ?>
 
         </div>
     </main>
