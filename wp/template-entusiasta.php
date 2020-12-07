@@ -15,10 +15,10 @@ Template Name: Entusiasta
                     </div>
                 </div>
                 <div class="col-12 col-lg-4 order-lg-1">
-                   <div class="title">
+                   <div class="title mb-5">
                         <h2><?php the_title(); ?></h2>
                    </div>
-                   <div class="discription">
+                   <div class="description">
                         <?php the_content(); ?>
                    </div>
                </div>

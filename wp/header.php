@@ -29,12 +29,12 @@
             <div class="search">
             </div>
         </div>
-        <div class="main-menu d-none">
+        <div class="main-menu menu-close">
             <div class="container">
-                <div class="row no-gutters">
-                    <div class="col-6"></div>
+                <div class="row d-block d-lg-flex no-gutters ">
+                    <div class="col-6 pt-5 pt-lg-0" ></div>
                     <div class="col-6">
-                        <div class="row no-gutters">
+                        <div class="row d-block d-lg-flex no-gutters">
                             <div class="col-6">
                                 <span class="title-menu">Assuntos</span>
                                 <ul class="subjects">
@@ -68,10 +68,12 @@
                 </div>
             </div>    
         </div>   
-        <div class="container">
-            <div class="logo">
-                <h2>O ENTUSIASTA</H2>
-            </div> 
+        <div class="logo-container">
+            <div class="container">
+                <div class="logo">
+                    <h2>O ENTUSIASTA</H2>
+                </div> 
+            </div>
         </div>
     </header>
     

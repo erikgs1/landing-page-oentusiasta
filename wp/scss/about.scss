@@ -20,6 +20,7 @@
             .title{
                 h2{
                     font-size: 40px;
+                    margin-bottom: 0;
                 }
             }
             h3{
@@ -33,14 +34,15 @@
             .description{
                 word-wrap: normal;
                 p{
-                    font-size: 18px;
-                    padding-right: 22px;
+                    font-size: 15px;
+                    font-weight: 300;
                 }
             }
             .image{
                     text-align: center;
                 img{
                     width: 100%;
+                    padding-left: 100px;
                 }
             }
         }

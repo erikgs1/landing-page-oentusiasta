@@ -6,7 +6,7 @@
                 <div class="col-12">
                     <div class="logo">
                         <h2>O Entusiasta</h2>
-                        <h3>crônicas de um correspondente das esquinas</h3>
+                        <h3>Crônicas de um correspondente das esquinas</h3>
                     </div>
                 </div>
             </div>

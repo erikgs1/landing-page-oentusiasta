@@ -15,6 +15,8 @@
         .main-menu{
             width: 80vw;
             height: 100vh;
+            top: 0;
+            left: -100vw;
             ul{
                 padding-left: 20px;
             }
@@ -42,7 +44,7 @@
         }
         .content-box{
             min-height: auto;
-            margin-bottom: 30px;
+            margin-bottom: 0;
             border: none;
             .feature-image{
                 img{
@@ -73,9 +75,7 @@
         }
         .content-info{
             .post--title{
-                a{
-                    font-size: 28px;
-                }
+                font-size: 28px;
             }
             .sub--title{
                 font-size: 20px;
@@ -87,9 +87,12 @@
             }
         }
         .post-content{
-            img{
+            .wp-block-image{
                 width: calc(100% + 30px);
                 margin-left: -15px;
+                figcaption{
+                   margin: 10px 15px 50px;
+                }
             }
             p{
                 font-size: 16px;
@@ -127,6 +130,7 @@
                     img{
                         width: calc(100% + 30px);
                         margin-left: -15px;
+                        padding-left: 0;
                     }
                 }
             }
