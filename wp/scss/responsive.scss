@@ -1,6 +1,14 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "colors";
 
+
+@media (max-width: 1359.98px){
+    header{
+        .buttons-menu{
+            left: -50%;
+        }
+    }
+}
 @include media-breakpoint-down(md) { 
     header{
         min-height: 70px;

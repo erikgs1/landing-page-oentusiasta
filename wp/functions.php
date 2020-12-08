@@ -17,12 +17,12 @@ function oentusiasta_config(){
             'footer_menu' => 'Footer Menu'
         )
     );
-    add_theme_support('post-thumbnails');
+	add_theme_support('post-thumbnails');
+	add_theme_support('title-tag');
 }
 add_action('after_setup_theme', 'oentusiasta_config', 0);
 
 function manifest_widgets_init() {
-
 	register_sidebar(
 		array(
 			'name'          => __( 'Manifesto Subtítulo' ),
