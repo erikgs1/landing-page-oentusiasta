@@ -36,31 +36,27 @@
                         <div class="row d-block d-lg-flex no-gutters">
                             <div class="col-6">
                                 <span class="title-menu">Assuntos</span>
-                                <ul class="subjects">
-                                    <li>
-                                        <a href="#"> Arquitetura </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Cinema</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Gastronomia</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Música</a>
-                                    </li>
-                                </ul>
+                                <div class="subjects">
+                                     <?php 
+                                        wp_nav_menu( 
+                                            array( 
+                                                'theme_location' => 'my_main_menu_left' 
+                                            ) 
+                                        ); 
+                                    ?>
+                                </div>
                             </div>
                             <div class="col-6">
                                 <span class="title-menu">Conheça</span>
-                                <ul class="about">
-                                    <li>
-                                        <a href="#">Quem faz?</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Manifesto</a>
-                                    </li>
-                                </ul>
+                                <div class="about">
+                                    <?php 
+                                        wp_nav_menu( 
+                                            array( 
+                                                'theme_location' => 'my_main_menu_right' 
+                                            ) 
+                                        ); 
+                                    ?>
+                                </div>
                             </div>
                         </div>
                     </div>

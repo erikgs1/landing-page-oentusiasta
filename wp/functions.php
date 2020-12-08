@@ -13,7 +13,8 @@ add_action('wp_enqueue_scripts', 'load_scripts');
 function oentusiasta_config(){
     register_nav_menus(
         array(
-            'my_main_menu' => 'Main Menu',
+			'my_main_menu_left' => 'Main Menu Left',
+            'my_main_menu_right' => 'Main Menu Right',
             'footer_menu' => 'Footer Menu'
         )
     );

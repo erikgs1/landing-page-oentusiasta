@@ -1,4 +1,5 @@
 
+
 function responsiveMenu(x){
   if (x.matches){
     (function($){
@@ -30,6 +31,18 @@ function responsiveMenu(x){
     })(jQuery);
   }
 }
+
+(function($){
+  $(".buttons-menu").click(function() {
+    if($(".main-menu").hasClass("menu-close")) {
+      $(".buttons-menu").css({position: "relative"}).removeClass("menu-close");
+    }
+      
+    else {
+      $(".buttons-menu").css({position: "fixed"}).removeClass("menu-close");
+    }
+  });
+})(jQuery);
 
 var x = window.matchMedia("(max-width: 991px)");
 responsiveMenu(x);
