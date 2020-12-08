@@ -7,9 +7,9 @@
 </head>
 <body <?php body_class(); ?>> 
     <?php 
-        $categories = get_the_category(); 
+        $tags = get_the_tags(); 
     ?>
-    <header  class="<?php  echo $categories[0]->cat_name; ?>">
+    <header  class="<?php echo $tags[0]->name; ?>">
         <div class="post-thumb">
                 <div class="row no-gutters">
                     <div class="col-12">

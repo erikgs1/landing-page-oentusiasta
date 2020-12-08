@@ -20,7 +20,7 @@
                 <div class="col-1 "></div>
                 <div class="col-12 col-lg-8 pr-lg-5">
                     <div class="content-info">
-                        <p class="tag"><?php the_tags('', ', ' ); ?></p>
+                        <p class="tag"><?php the_category( ' ' ); ?></p>
                         <h2 class="post--title">
                             <?php the_title(); ?>
                         </h2>

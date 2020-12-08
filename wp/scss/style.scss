@@ -105,6 +105,7 @@ header{
         }
     }
 }
+
 main{
     .box-small{
         .content-info{
@@ -269,6 +270,12 @@ footer{
                 padding-left: 15px;
             }
         }
+    }
+}
+.error-404{
+    height: 350px;
+    h1{
+        font-size: 40px;
     }
 }
 @import "responsive";
