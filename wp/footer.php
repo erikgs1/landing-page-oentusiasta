@@ -62,6 +62,35 @@
         </div>
     </footer>
     <!-- // Footer -->
+    <script src="<?php bloginfo('template_url');?>/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        (function($){
+            $('.carousel').slick({
+            infinite: false,
+            arrows: false,
+            slidesToShow: 2.2,
+            responsive: [
+                {
+                breakpoint: 768,
+                settings: {
+                    infinite: false,    
+                    arrows: false,
+                    slidesToShow: 2
+                }
+                },
+                {
+                breakpoint: 480,
+                settings: {
+                    infinite: false,
+                    arrows: false,
+                    slidesToShow: 1
+                }
+                }
+            ]
+            });
+        })(jQuery);
+    </script>
+    
     <?php wp_footer(); ?>
 </body>
 </html>

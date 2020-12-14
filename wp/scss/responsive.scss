@@ -191,6 +191,11 @@
             }
         }
     }
+    .single{
+        .carousel{
+            padding-left: 0;
+        }
+    }
 }
 @include media-breakpoint-down(sm) { 
     header{

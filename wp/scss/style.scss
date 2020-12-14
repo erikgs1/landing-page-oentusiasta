@@ -285,4 +285,7 @@ footer{
         font-size: 40px;
     }
 }
+:focus{
+    outline: none;
+}
 @import "responsive";

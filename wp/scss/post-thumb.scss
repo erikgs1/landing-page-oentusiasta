@@ -33,6 +33,9 @@
             }
         }
     }
+    .carousel{
+        padding-left: 8.33333%;
+    }
 }
 
 main{
@@ -129,6 +132,9 @@ main{
             display: block;
         }
     }
+    .most-read--title{
+        margin-bottom: 30px;
+    }
     .most-read, .carousel{
         width: 100%;
     }
@@ -140,5 +146,8 @@ main{
         h3{
             font-style: italic;
         }
+    }
+    .slick-track{
+        margin-left: -15px;
     }
 }

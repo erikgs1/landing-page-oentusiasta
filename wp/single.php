@@ -42,7 +42,6 @@
             </div>
             <div class="row no-gutters">
                 <div class="most-read">
-                        
                     <div class="row no-gutters">
                         <div class="col-1"></div>
                         <div class="col-12 col-lg-8">
@@ -52,13 +51,37 @@
                                     <h3 class="category">Música</h3>
                                 </div>
                             </div>
-                            <div class="row no-gutters">
-                                <div class="col-12 carousel">
-                                    
-                                </div>
-                            </div>
                         </div>
                         <div class="col-3"></div>
+                    </div>
+                    <div class="row no-gutters carousel">
+                        <!-- Smalls Images -->
+                            <?php
+                            $categorie = get_the_category();
+                            $category_id = $categorie[0]->cat_ID;
+                            $medium = new WP_Query(array(
+                                'post_type' => 'post',
+                                'posts_per_page' => 5,
+                                'cat' => $category_id,
+                                'order' => 'DESC',
+                            ));
+                            if( $medium->have_posts()):
+                                while($medium->have_posts()): $medium->the_post();
+                            ?>
+                            
+                                <div class="col-12 col-lg-6">
+                                    <div class="content-box box-medium">
+                                        <?php get_template_part('template-parts/content', 'medium') ?>
+                                    </div>
+                                
+                                </div>
+                                
+                            <?php
+                                    endwhile;
+                                    wp_reset_postdata();
+                                endif;
+                            ?>
+                        <!-- End Small Images -->
                     </div>
                 </div>
             </div>

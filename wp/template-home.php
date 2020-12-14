@@ -32,6 +32,7 @@ Template Name: Home
                     <?php
                             endwhile;
                             wp_reset_postdata();
+                                    
                         endif;
                     ?>
                 </div>
@@ -59,6 +60,7 @@ Template Name: Home
                     <?php
                             endwhile;
                             wp_reset_postdata();
+                                    
                         endif;
                     ?>
                 <!-- End Small Images -->
@@ -85,6 +87,7 @@ Template Name: Home
                     <?php
                             endwhile;
                             wp_reset_postdata();
+                                    
                         endif;
                     ?>
                 <!-- End Small Images -->
@@ -114,6 +117,7 @@ Template Name: Home
                     <?php
                             endwhile;
                             wp_reset_postdata();
+                                    
                         endif;
                     ?>
                 <!-- End Small Images -->
@@ -140,6 +144,7 @@ Template Name: Home
                     <?php
                             endwhile;
                             wp_reset_postdata();
+                                    
                         endif;
                     ?>
                 <!-- End Large Images -->
@@ -165,6 +170,7 @@ Template Name: Home
                     <?php
                             endwhile;
                             wp_reset_postdata();
+                                    
                         endif;
                     ?>
                 </div>
@@ -189,6 +195,7 @@ Template Name: Home
                     <?php
                             endwhile;
                             wp_reset_postdata();
+                                    
                         endif;
                     ?>
                 </div>
@@ -218,6 +225,7 @@ Template Name: Home
                         <?php
                                 endwhile;
                                 wp_reset_postdata();
+                                    
                             endif;
                         ?>
                 <!-- End Small Images -->
@@ -241,6 +249,7 @@ Template Name: Home
                     <?php
                             endwhile;
                             wp_reset_postdata();
+                                    
                         endif;
                     ?>
                 </div>
@@ -268,6 +277,7 @@ Template Name: Home
                 <?php
                         endwhile;
                         wp_reset_postdata();
+                                    
                     endif;
                 ?>
                 <!-- End Small Images -->
@@ -297,6 +307,7 @@ Template Name: Home
                     <?php
                             endwhile;
                             wp_reset_postdata();
+                                    
                         endif;
                     ?>
                 <!-- End Large Images -->
@@ -323,6 +334,7 @@ Template Name: Home
                         <?php
                                 endwhile;
                                 wp_reset_postdata();
+                                    
                             endif;
                         ?>
                 <!-- End Small Images -->
@@ -350,7 +362,7 @@ Template Name: Home
                         while($small->have_posts()): $small->the_post();
                 ?>
                 
-                <div class="col-12 col-lg-3">
+                <div class="col-12 col-lg-3 item">
 
                     <div class="content-box box-small  border--left">
                         <?php get_template_part('template-parts/content', 'small') ?>
@@ -360,6 +372,7 @@ Template Name: Home
                 <?php
                         endwhile;
                         wp_reset_postdata();
+                                    
                     endif;
                 ?>
                 <!-- End Small Images -->
@@ -383,6 +396,7 @@ Template Name: Home
                     <?php
                             endwhile;
                             wp_reset_postdata();
+                                    
                         endif;
                     ?>
                 </div>
@@ -393,10 +407,9 @@ Template Name: Home
                     <div class="row no-gutters">
                         <!-- Medium Image-->
                             <?php 
-                                
                                 $medium = new WP_Query( array(
                                     'post_type' => 'post',
-                                    'posts_per_page' => 4,
+                                    'posts_per_page' => 2,
                                     'offset' => 14,
                                 ));
                                 if( $medium->have_posts()):
@@ -408,21 +421,19 @@ Template Name: Home
                                     <?php get_template_part('template-parts/content', 'medium') ?>
                                 </div>
                             </div>
-                            
                             <?php
-                                    endwhile;
+                                endwhile;
                                     wp_reset_postdata();
                                 endif;
                             ?>
+                            
                         <!-- End medium Image-->
                     </div>
                     <?php 
                     else:
                     endif;
                 ?>
-
         </div>
     </main>
-
 <!-- //Main Content -->
 <?php get_footer(); ?>
