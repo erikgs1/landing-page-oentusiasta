@@ -1,10 +1,4 @@
-<?php 
 
-/*
-Template Name: Home
-*/
-
-?>
 
 <?php get_header(); ?>
     
@@ -436,4 +430,4 @@ Template Name: Home
         </div>
     </main>
 <!-- //Main Content -->
-<?php get_footer(); ?>
+<?php get_footer(); ?> 
