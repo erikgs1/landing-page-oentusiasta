@@ -75,12 +75,8 @@
                                     </div>
                                 
                                 </div>
-                                <pre>
-                            <?php 
-                                print_r($medium); ?>
-                                </pre>
+                                
                             <?php
-                                print_r($medium);
                                     endwhile;
                                     wp_reset_postdata();
                                 endif;

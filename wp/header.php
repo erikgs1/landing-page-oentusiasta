@@ -22,6 +22,7 @@
         </div>
         <div class="buttons-menu">
             <div class="close-open">
+                <input  type="checkbox">
                 <span class="line line--one"></span>
                 <span class="line line--two"></span>
             </div>

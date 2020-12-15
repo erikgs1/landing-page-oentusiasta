@@ -40,6 +40,11 @@ header{
             position: relative;
             top: 16px;
             left: 20px;
+            button{
+                width: 15px;
+                height: 20px;
+                opacity: 0;
+            }
             .line{
             width: 16px;
             height: 2px;

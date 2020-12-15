@@ -22,7 +22,7 @@
                         else:
                         ?>
 
-                            <p><?php _e( 'There&rsquo;s nothing yet to be displayed...', 'oentusiasta' ); ?></p>
+                            <p><?php _e( 'There&rsquo;s nothing yet to be displayed...', 'wpcurso' ); ?></p>
 
                         <?php endif; ?>
 
