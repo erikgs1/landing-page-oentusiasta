@@ -17,7 +17,6 @@
                             $count = 0;
                             while($query_Posts->have_posts()): $query_Posts->the_post();
                             $count++;
-
                             // Iniciando linha 1 
                             if($count > 0 && $count < 4){
                                 ?>
@@ -235,21 +234,33 @@
                                 <?php
                             } 
                             // Finalizando linha 6
-                    ?>
-                    
-                    
-                    
+                            ?>
                     <?php
-                  
                             endwhile;
                             ?>
-                            <div class="row col-12">
-                                <?php wpex_pagination(); ?>
+                            <div class="row">
+                                <div class="pagination">
+                                    <div class="d-none d-lg-block col-2"></div>
+                                    <div class=" col-12 col-lg-8">
+                                        <?php wpex_pagination(); ?>
+                                    </div>
+                                    <div class="d-none d-lg-block col-2"></div>
+                                </div>
                             </div>
                             <?php
                             wp_reset_postdata();
                             
+                        else:
+                            ?>
+                            <div class="row">
+                                <div class="col-2"></div>
+                                <div class="col-8">
+                                    Oops... Parece que algo deu errado... que tal <a href="<?php echo get_home_url(); ?>">Voltar para a Home?</a>
+                                </div>
+                                <div class="col-2"></div>
+                            </div>
 
+                            <?php
                         endif;
                     ?> 
                 </div>

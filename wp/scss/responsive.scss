@@ -36,8 +36,10 @@
         .logo{
             height: 70px;
             h2{
-                font-size: 30px;
                 line-height: 70px;
+                a{
+                    font-size: 30px;
+                }
             }
         }
     }
@@ -196,7 +198,11 @@
             padding-left: 0;
         }
     }
+    .body--post--pattern{
+        width: 100%;
+    }
 }
+
 @include media-breakpoint-down(sm) { 
     header{
         .main-menu{

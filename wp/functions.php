@@ -64,11 +64,15 @@ if ( !function_exists( 'wpex_pagination' ) ) {
 	
 	function wpex_pagination() {
 		
-		$prev_arrow = is_rtl() ? '→' : '←';
-		$next_arrow = is_rtl() ? '←' : '→';
+		$prev_arrow = is_rtl() ? 'Próxima página' : 'Página Anterior';
+		$next_arrow = is_rtl() ? 'Página Anterior' : 'Próxima página';
 		
-		global $wp_query;
-		$total = $wp_query->max_num_pages;
+		global $wp_query, $query_Posts;
+		if ( $query_Posts ) {
+			$total = $query_Posts->max_num_pages;
+		} else {
+			$total = $wp_query->max_num_pages;
+		}
 		$big = 999999999; // need an unlikely integer
 		if( $total > 1 )  {
 			 if( !$current_page = get_query_var('paged') )
@@ -83,7 +87,7 @@ if ( !function_exists( 'wpex_pagination' ) ) {
 				'format'		=> $format,
 				'current'		=> max( 1, get_query_var('paged') ),
 				'total' 		=> $total,
-				'mid_size'		=> 3,
+				'mid_size'		=> 0,
 				'type' 			=> 'list',
 				'prev_text'		=> $prev_arrow,
 				'next_text'		=> $next_arrow,
