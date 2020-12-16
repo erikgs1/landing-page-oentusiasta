@@ -61,15 +61,17 @@
                             $category_id = $categorie[0]->cat_ID;
                             $medium = new WP_Query(array(
                                 'post_type' => 'post',
-                                'posts_per_page' => 5,
+                                'showposts' => 5,
                                 'cat' => $category_id,
-                                'order' => 'DESC',
+                                'orderby'             => 'meta_value_num',  
+                                'meta_key'            => 'tp_post_counter', 
+                                'order'               => 'DESC'          
                             ));
                             if( $medium->have_posts()):
                                 while($medium->have_posts()): $medium->the_post();
                             ?>
-                            
-                                <div class="col-12 col-lg-6">
+                        
+                                <div class="col-12 ">
                                     <div class="content-box box-medium">
                                         <?php get_template_part('template-parts/content', 'medium') ?>
                                     </div>

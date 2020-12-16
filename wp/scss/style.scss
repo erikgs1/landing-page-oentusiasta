@@ -83,6 +83,52 @@ header{
         }
         
     }
+    .search{
+        position: relative;
+        width: 220px;
+        height: 30px;
+        border-bottom: 1px solid $black;
+        top: -5px;
+        left: 80px;
+        .before-search{
+            top: 5px;
+            left: 5px;
+            position: absolute;
+            z-index: 2;
+        }
+        form{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 220px;
+            label{
+                width: 100%;
+                margin: 0;
+                input{
+                    width: 100%;
+                    padding-left: 40px;
+                    border: none;
+                    background-color: transparent;
+                    color: $black;
+                    font-family: 'IBM Plex Serif', serif;
+                    font-style: italic;
+                    &::placeholder {
+                        color: $textColor;
+                    }
+                }
+            }
+            button{
+                border: 0;
+                background: transparent;
+                position: absolute;
+                top: -3px;
+                left: -1px;
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+    }
     .main-menu{
         width: 100%;
         min-height: 270px;

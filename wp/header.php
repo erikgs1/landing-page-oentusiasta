@@ -26,8 +26,7 @@
                 <span class="line line--one"></span>
                 <span class="line line--two"></span>
             </div>
-            <div class="search">
-            </div>
+            <?php get_search_form(); ?>
         </div>
         <div class="main-menu menu-close">
             <div class="container">
