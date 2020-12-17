@@ -66,6 +66,7 @@
     <script type="text/javascript">
         (function($){
             $('.carousel').slick({
+            autoplay: true,
             infinite: false,
             arrows: false,
             slidesToShow: 2.2,
@@ -73,6 +74,7 @@
                 {
                 breakpoint: 768,
                 settings: {
+                    autoplay: true,
                     infinite: false,    
                     arrows: false,
                     slidesToShow: 2
@@ -81,6 +83,7 @@
                 {
                 breakpoint: 480,
                 settings: {
+                    autoplay: true,
                     infinite: false,
                     arrows: false,
                     slidesToShow: 1
