@@ -1,5 +1,5 @@
-<div class="search">
-    <svg class="before-search" xmlns="http://www.w3.org/2000/svg" width="15.28" height="15.28" viewBox="0 0 14.28 15.28" style="&#10; ">
+<div class="search-button">
+    <svg class="before-search search-close" xmlns="http://www.w3.org/2000/svg" width="15.28" height="15.28" viewBox="0 0 14.28 15.28" style="&#10; ">
         <defs>
             <style>
                 .cls-1{fill:none;stroke:#000;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:1.5px}
@@ -11,6 +11,7 @@
         </g>
     </svg>
     <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+        <span class="screen-reader-text d-none"><?php echo _x('Sarch for:', 'label', 'oentusiasta')?></span>
         <label>
             <input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Procure por algo', 'placeholder', 'oentusiasta' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
         </label>

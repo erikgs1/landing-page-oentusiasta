@@ -255,7 +255,7 @@
                             <div class="row">
                                 <div class="col-2"></div>
                                 <div class="col-8">
-                                    Oops... Parece que algo deu errado... que tal <a href="<?php echo get_home_url(); ?>">Voltar para a Home?</a>
+                                    Oops... Parece que algo deu errado... Que tal, <a href="<?php echo get_home_url(); ?>">Voltar para a Home?</a>
                                 </div>
                                 <div class="col-2"></div>
                             </div>

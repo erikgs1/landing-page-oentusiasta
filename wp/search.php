@@ -15,15 +15,23 @@
                             <?php get_template_part('template-parts/content', 'content') ?>
                         <?php 
                             endwhile;
-
+                            
                             ?>
-                                
+                                <div class="pagination">
+                                    <div class=" col-12">
+                                        <?php wpex_pagination(); ?>
+                                    </div>
+                                </div>
                             <?php
                         else:
                         ?>
-
-                            <p><?php _e( 'There&rsquo;s nothing yet to be displayed...', 'wpcurso' ); ?></p>
-
+                            <div class="col-lg-2"></div>
+                                <div class="col-12 col-lg-8">
+                                    <span class="erro-text">
+                                    Oops... Parece que nenhum resultado foi encontrado... Que tal <a href="<?php echo get_home_url(); ?>">voltar para a Home?</a>
+                                    </span>
+                                </div>
+                            <div class="col-lg-2"></div>
                         <?php endif; ?>
 
                     </div>

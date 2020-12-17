@@ -61,7 +61,6 @@ add_action( 'widgets_init', 'manifest_widgets_init' );
 
 // Numbered Pagination
 if ( !function_exists( 'wpex_pagination' ) ) {
-	
 	function wpex_pagination() {
 		
 		$prev_arrow = is_rtl() ? 'Próxima página' : 'Página Anterior';
@@ -94,8 +93,8 @@ if ( !function_exists( 'wpex_pagination' ) ) {
 			 ) );
 		}
 	}
-	
 }
+
 // Verifica se não existe nenhuma função com o nome tp_count_post_views
 if ( ! function_exists( 'tp_count_post_views' ) ) {
     // Conta os views do post
@@ -135,3 +134,4 @@ if ( ! function_exists( 'tp_count_post_views' ) ) {
     }
     add_action( 'get_header', 'tp_count_post_views' );
 }
+

@@ -34,7 +34,7 @@
                             <p><?php echo get_the_date(); ?></p>
                         </div>
                     </div>
-                    <div class="post-content">
+                    <div class="post-content">  
                         <?php the_content(); ?>
                     </div>
                 </div>

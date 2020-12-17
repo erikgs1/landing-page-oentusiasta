@@ -1,5 +1,4 @@
 
-
 function responsiveMenu(x){
   if (x.matches){
     (function($){
@@ -48,3 +47,15 @@ var x = window.matchMedia("(max-width: 991px)");
 responsiveMenu(x);
 x.addListener(responsiveMenu);
 
+(function($){
+  $(".before-search").click(function(){
+    if($(".before-search").hasClass("search-close")){
+      $(".before-search").css("display", "none");
+      $(".search-button").addClass("border--bottom");
+      $(".search-button").css("border-color", "#000");
+      $(".before-search").css("display", "none");
+      $(".search-form").css("display", "block");
+      $(".search-form").css("width", "220px");
+    }
+  });
+})(jQuery);
