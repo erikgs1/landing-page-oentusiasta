@@ -66,7 +66,7 @@
         <div class="logo-container">
             <div class="container">
                 <div class="logo">
-                    <h2>
+                    <h2 class="logo-text">
                         <a href="<?php echo get_home_url(); ?>">O ENTUSIASTA</a>
                     </h2>
                     

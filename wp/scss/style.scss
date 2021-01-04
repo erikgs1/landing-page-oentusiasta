@@ -110,7 +110,7 @@ header{
                     border: none;
                     background-color: transparent;
                     color: $black;
-                    font-family: 'IBM Plex Serif', serif;
+                    font-family: 'IBMPlexMono', serif;
                     font-style: italic;
                     &::placeholder {
                         color: $textColor;
@@ -375,7 +375,6 @@ footer{
     ul{
         width: calc(100% + 50px);
         padding-left: 25px;
-        padding-right: 20px;
         list-style-type: none;
         float: left;
         li{
@@ -389,6 +388,9 @@ footer{
                     width: 30px;
                     float: left;
                     filter: invert(1);
+                }
+                :hover{
+                    opacity: 0.8;
                 }
             }
             &:first-child{

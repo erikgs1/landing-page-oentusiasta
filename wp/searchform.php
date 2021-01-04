@@ -17,7 +17,7 @@
         </label>
         <button type="submit" class="search-submit"><span class="screen-reader-text"><?php echo _x( 
         '
-            <svg xmlns="http://www.w3.org/2000/svg" width="15.28" height="15.28" viewBox="0 0 14.28 15.28" style="&#10; ">
+            <svg class="after-search" xmlns="http://www.w3.org/2000/svg" width="15.28" height="15.28" viewBox="0 0 14.28 15.28" style="&#10; ">
                 <defs>
                     <style>
                         .cls-1{fill:none;stroke:#000;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:1.5px}
