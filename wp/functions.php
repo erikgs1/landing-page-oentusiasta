@@ -8,6 +8,7 @@ function load_scripts(){
 
     wp_enqueue_style('style', get_template_directory_uri() . '/dist/style.css', array(), 1.0, 'all');
 	wp_enqueue_style('slick', get_template_directory_uri() . '/slick/slick.css', array(), 1.0, 'all');
+	wp_enqueue_style('slick-theme', get_template_directory_uri() . '/slick/slick-theme.css', array(), 1.0, 'all');
 }
 	
 add_action('wp_enqueue_scripts', 'load_scripts');

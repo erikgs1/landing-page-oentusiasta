@@ -6,16 +6,16 @@
 		<main>
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-3"></div>
-						<div class="col-12 col-lg-6">
+					<div class="col-lg-1"></div>
+						<div class="col-12 col-lg-10">
 							<div class="error-404">
 								<header>
-									<h1 class="mb-4">  Page not found</h1>
-									<p>Opa! Algo deu errado... Infelizmente, a página que você tentou acessar não existe neste site</p>
+									<p>Opa! Algo deu errado... Infelizmente, a página que você tentou acessar não existe neste site.</p>
+									<p>Que tal <a href="<?php echo get_home_url(); ?>">voltar a home?</a></p>
 								</header>
 							</div>
 						</div>
-					<div class="col-lg-3"></div>	
+					<div class="col-lg-1"></div>	
 				</div>
 			</div>	
 		</main>

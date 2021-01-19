@@ -27,9 +27,10 @@
                         ?>
                             <div class="col-lg-2"></div>
                                 <div class="col-12 col-lg-8">
-                                    <span class="erro-text">
-                                    Oops... Parece que nenhum resultado foi encontrado... Que tal <a href="<?php echo get_home_url(); ?>">voltar para a Home?</a>
-                                    </span>
+                                    <div class="error-text">
+                                        <p> Ops... Parece que nenhum resultado foi encontrado. </p>
+                                        <p> Que tal <a href="<?php echo get_home_url(); ?>">voltar para a Home?</a> </p>
+                                    </div>
                                 </div>
                             <div class="col-lg-2"></div>
                         <?php endif; ?>

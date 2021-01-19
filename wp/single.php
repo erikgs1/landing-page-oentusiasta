@@ -41,6 +41,14 @@
                 <div class="col-3"></div>
             </div>
             <div class="row no-gutters">
+                <div class="col-1">
+                    
+                </div>
+                <div class="col-11">
+                    <span class="border-post-end"></span>
+                </div>
+            </div>
+            <div class="row no-gutters">
                 <div class="most-read">
                     <div class="row no-gutters">
                         <div class="col-1"></div>

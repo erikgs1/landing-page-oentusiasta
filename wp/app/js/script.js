@@ -40,11 +40,11 @@ function responsiveSearch(search){
     (function($){
       $(".close-open").click(function() {
         if($(".main-menu").hasClass("menu-close")) {
-          $(".buttons-menu").css("width", "100%")
+          $(".buttons-menu").css("width", "100%");
         }
           
         else {
-          $(".buttons-menu").css("width", "80vw")
+          $(".buttons-menu").css("width", "80vw");
         }
       });
     })(jQuery);
@@ -61,17 +61,17 @@ search.addListener(responsiveSearch);
       $(".buttons-menu").css("position", "relative").removeClass("menu-close");
       $(".before-search").css("filter", "invert(0)");
       $(".after-search").css("filter", "invert(0)");
+      $(".input-box-shadow").css("filter", "invert(0)");
       $(".search-button").css("border-color", "black");
       $(".search-field").css("color", "black");
-
     }
       
     else {
       $(".buttons-menu").css("position", "fixed").removeClass("menu-close");
       $(".before-search").css("filter", "invert(1)");
       $(".after-search").css("filter", "invert(1)");
+      $(".input-box-shadow").css("filter", "invert(1)");
       $(".search-button").css("border-color", "white");
-      $(".search-field").css("color", "white");
     }
   });
 })(jQuery);
@@ -96,10 +96,13 @@ function responsiveLogo(logo){
       $(".close-open").click(function() {
         if($(".main-menu").hasClass("menu-close")) {
           $(".logo").css("margin", "-28px 0 0 0").removeClass("menu-close");
+          $(".logo").css("filter", "invert(0)");
         }
           
         else {
-          $(".logo").css("margin", "0").removeClass("menu-close");
+          $(".logo").css("margin", "-14px 0 0 0").removeClass("menu-close");
+          $(".logo").css("filter", "invert(1)");
+          $(".logo").css("z-index", "1");
         }
       });
       

@@ -5,6 +5,18 @@
     
     <main> 
         <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="category-name">
+                        <h2>
+                            <?php 
+                                $categories = get_the_category();
+                                echo $categories[0]->name; 
+                            ?>
+                        </h2>
+                    </div>
+                </div>
+            </div>
                 <!-- Medium Image-->
                     <?php 
                     $categories = get_the_category();

@@ -16,7 +16,7 @@ Template Name: Manifesto
                    </div>
                 </div>
                 <div class="col-12 order-2 order-lg-2">
-                    <div class="col-lg-6">
+                    <div class="col-lg-7">
                         <?php dynamic_sidebar( 'manifest-sub');?>
                     </div>
                 </div>
@@ -27,7 +27,7 @@ Template Name: Manifesto
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-7 order-1 order-lg-4 d-flex align-items-end">
+                <div class="col-12 col-lg-6 order-1 order-lg-4 d-flex align-items-end">
                     <div class="col-12">
                         <div class="image">
                             <img class="image-manifest" src="<?php echo get_the_post_thumbnail_url();?>" alt="">
